@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%msg%n" />
+		</Console>
+
+		<File name="File" fileName="../logs/currency-app.log">
+			<PatternLayout>
+				<Pattern>%d %p %c{1} [%t] %m%n</Pattern>
+			</PatternLayout>
+		</File>
+
+	</Appenders>
+	<Loggers>
+	
+		<Root level="error">
+			<AppenderRef ref="File" />
+		</Root>
+
+		<Logger name="lt.povilass.currencyapp" level="debug" additivity="false">
+			<AppenderRef ref="File" />
+		</Logger>
+		
+		
+
+	</Loggers>
+</Configuration>
