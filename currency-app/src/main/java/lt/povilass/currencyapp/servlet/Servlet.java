@@ -3,7 +3,6 @@ package lt.povilass.currencyapp.servlet;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.MathContext;
-import java.math.RoundingMode;
 import java.sql.SQLException;
 import java.util.Collections;
 import java.util.LinkedList;
